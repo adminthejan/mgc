@@ -1,6 +1,18 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@font-face {
+  font-family: "FinalNew";
+  src: url("/font/Finalnew.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+.main-topic-font {
+  font-family: "FinalNew", sans-serif;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

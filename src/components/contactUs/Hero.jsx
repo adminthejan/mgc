@@ -27,7 +27,7 @@ const Hero = () => {
         <p className="text-[11px] uppercase tracking-[0.2em] text-sky-700/80 font-semibold">
           Get in touch
         </p>
-        <h1 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight bg-linear-to-r from-sky-700 via-cyan-700 to-blue-600 bg-clip-text text-transparent">
+        <h1 className="main-topic-font mt-2 text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight bg-linear-to-r from-sky-700 via-cyan-700 to-blue-600 bg-clip-text text-transparent">
           Contact Us
         </h1>
         <p className="mt-3 max-w-2xl text-gray-600">

@@ -515,7 +515,7 @@ const HeroOne = () => {
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
               Featured Company
             </div>
-            <h1 className="text-3xl md:text-5xl font-black leading-tight">
+            <h1 className="main-topic-font text-3xl md:text-5xl font-black leading-tight">
               {slide.title}
             </h1>
             <p className="text-sm md:text-base max-w-2xl mx-auto leading-relaxed">

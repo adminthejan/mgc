@@ -60,7 +60,7 @@ const AboutUs = () => {
             Established 1995 · 100% Sri Lankan-Owned
           </motion.span>
 
-          <motion.h1 {...fadeUp(0.1)} className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight leading-tight">
+          <motion.h1 {...fadeUp(0.1)} className="main-topic-font text-4xl md:text-6xl lg:text-7xl font-black tracking-tight leading-tight">
             Model Group of
             <span className="block bg-gradient-to-r from-cyan-300 via-sky-300 to-emerald-300 bg-clip-text text-transparent">
               Companies (Pvt) Ltd
