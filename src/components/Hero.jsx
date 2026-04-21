@@ -484,198 +484,198 @@ const Hero = () => {
   const companies = useMemo(
     () => {
       const base = [
-      {
-        name: "MGC GROUP NGO",
-        website: "https://www.mgcgroupngo.com/",
-        description:
-          "Non‑profit initiatives focused on education, health, and community development through targeted social programs.",
-      },
-      {
-        name: "BARCLAYS FINANCE LIMITED",
-        website: "https://modelgroupof.com/",
-        description:
-          "Fixed deposits, lending, and secure financial solutions with flexible tenures and competitive returns.",
-      },
-      {
-        name: "USA FINANCE LLP",
-        website: "https://modelgroupof.com/",
-        description:
-          "Financial services for individuals and businesses, offering deposits, credit, and tailored advisory.",
-      },
-      {
-        name: "MGC CASINO LIMITED",
-        website: "https://modelgroupof.com/",
-        description:
-          "Premium entertainment and responsible gaming experiences across multiple venues.",
-      },
-      {
-        name: "MODEL GROUP FINANCE LIMITED",
-        website: "https://modelgroupof.com/",
-        description:
-          "Stable returns and financing solutions including deposits and loan facilities for diverse needs.",
-      },
-      {
-        name: "MODEL GROUP OF COMPANIES LTD",
-        website: "https://modelgroupof.com/",
-        description:
-          "Diversified group with interests across mobility, finance, and international trade.",
-      },
-      {
-        name: "ABU DHABI BIG TIKAT",
-        website: "https://modelgroupof.com/",
-        description:
-          "Raffle and prize draw platform focused on transparent, responsible participation.",
-      },
-      {
-        name: "BARCLAYS GROUP OF COMPANIES LTD",
-        website: "https://modelgroupof.com/",
-        description:
-          "Multi‑sector holding company with finance and services operations.",
-      },
-      {
-        name: "CANADIN FINANCE",
-        website: "https://modelgroupof.com/",
-        description:
-          "Savings, deposits, and lending services with customer‑centric policies.",
-      },
-      {
-        name: "CASINO UK",
-        website: "https://modelgroupof.com/",
-        description:
-          "Curated gaming and entertainment experiences in the UK market.",
-      },
-      {
-        name: "CHASE FINANCE LLP",
-        website: "https://modelgroupof.com/",
-        description:
-          "Financial products spanning deposits, credit lines, and business support.",
-      },
-      {
-        name: "CITI FINANCE LIMITED",
-        website: "https://modelgroupof.com/",
-        description:
-          "Deposit programs with flexible terms and accessible lending facilities.",
-      },
-      {
-        name: "DUBAI BIG TIKAT",
-        website: "https://modelgroupof.com/",
-        description:
-          "Large‑format raffle events offering compliant prize draws and promotions.",
-      },
-      {
-        name: "DUTCH FINANCE",
-        website: "https://modelgroupof.com/",
-        description:
-          "Traditional and digital finance services with an emphasis on security and returns.",
-      },
-      {
-        name: "JP MORGAN FINANCE",
-        website: "https://modelgroupof.com/",
-        description:
-          "Comprehensive financial services for retail and corporate clients.",
-      },
-      {
-        name: "MGC BIG TIKAT",
-        website: "https://modelgroupof.com/",
-        description: "Prize draw and raffle experiences under the MGC brand.",
-      },
-      {
-        name: "MGC U WIN LOTTERY LIMITED",
-        website: "https://modelgroupof.com/",
-        description:
-          "Lottery and instant‑win experiences operated with a focus on fairness and compliance.",
-      },
-      {
-        name: "MODEL GROUP OF COMPANIES",
-        website: "https://modelgroupof.com/",
-        description:
-          "Global operations spanning exports, procurement, and strategic partnerships.",
-      },
-      {
-        name: "MODEL GROUP OF COMPANIES LIMITED",
-        website: "https://modelgroupof.com/",
-        description:
-          "International corporate group providing mobility, finance, and services.",
-      },
-      {
-        name: "MODEL GROUP U WIN LOTTERY LIMITED",
-        website: "https://modelgroupof.com/",
-        description:
-          "Lottery and sweepstake operations with responsible gaming practices.",
-      },
-      {
-        name: "OCBC FINANCE LTD",
-        website: "https://modelgroupof.com/",
-        description:
-          "Deposit and lending services with flexible tenure and competitive rates.",
-      },
-      {
-        name: "PAYPAL FINANCE LLP",
-        website: "https://modelgroupof.com/",
-        description:
-          "Digital‑first financial services, deposits, and payment solutions.",
-      },
-      {
-        name: "S L TOBACCO",
-        website: "https://modelgroupof.com/",
-        description:
-          "Tobacco products distribution and related trade services.",
-      },
-      {
-        name: "STANDARD CHARTERED FINANCE LLP",
-        website: "https://modelgroupof.com/",
-        description:
-          "Finance solutions including deposits and personal/business lending products.",
-      },
-      {
-        name: "STARLING FINANCE LLP",
-        website: "https://modelgroupof.com/",
-        description:
-          "Retail and SME finance offerings with modern, digital workflows.",
-      },
-      {
-        name: "STRIPE FINANCE LIMITED",
-        website: "https://modelgroupof.com/",
-        description:
-          "Technology‑driven finance services for individuals and merchants.",
-      },
-      {
-        name: "SWISS FINANCE LTD",
-        website: "https://modelgroupof.com/",
-        description:
-          "Private and retail finance services with a focus on stability and privacy.",
-      },
-      {
-        name: "UNICEF NGO LIMITED",
-        website: "https://modelgroupof.com/",
-        description:
-          "Non‑profit initiatives focused on children’s welfare, education, and health programs.",
-      },
-      {
-        name: "UNITED NATIONS NGO LTD",
-        website: "https://modelgroupof.com/",
-        description:
-          "International NGO programs covering development and humanitarian support.",
-      },
-      {
-        name: "WELLS FARGO FINANCE LIMITED",
-        website: "https://modelgroupof.com/",
-        description:
-          "Full‑suite finance services for consumers and enterprises.",
-      },
-      {
-        name: "WISEBANK & FINANCE LIMITED",
-        website: "https://modelgroupof.com/",
-        description:
-          "Banking and finance solutions with modern digital access and secure deposits.",
-      },
-      {
-        name: "WORLD VISION NGO LTD",
-        website: "https://modelgroupof.com/",
-        description:
-          "NGO initiatives delivering community development and disaster response programs.",
-      },
-    ];
+        {
+          name: "MGC GROUP NGO",
+          website: "https://www.mgcgroupngo.com/",
+          description:
+            "Non‑profit initiatives focused on education, health, and community development through targeted social programs.",
+        },
+        {
+          name: "BARCLAYS FINANCE LIMITED",
+          website: "https://modelgroupof.com/",
+          description:
+            "Fixed deposits, lending, and secure financial solutions with flexible tenures and competitive returns.",
+        },
+        {
+          name: "USA FINANCE LLP",
+          website: "https://modelgroupof.com/",
+          description:
+            "Financial services for individuals and businesses, offering deposits, credit, and tailored advisory.",
+        },
+        {
+          name: "MGC CASINO LIMITED",
+          website: "https://modelgroupof.com/",
+          description:
+            "Premium entertainment and responsible gaming experiences across multiple venues.",
+        },
+        {
+          name: "MODEL GROUP FINANCE LIMITED",
+          website: "https://modelgroupof.com/",
+          description:
+            "Stable returns and financing solutions including deposits and loan facilities for diverse needs.",
+        },
+        {
+          name: "MODEL GROUP OF COMPANIES LTD",
+          website: "https://modelgroupof.com/",
+          description:
+            "Diversified group with interests across mobility, finance, and international trade.",
+        },
+        {
+          name: "ABU DHABI BIG TIKAT",
+          website: "https://modelgroupof.com/",
+          description:
+            "Raffle and prize draw platform focused on transparent, responsible participation.",
+        },
+        {
+          name: "BARCLAYS GROUP OF COMPANIES LTD",
+          website: "https://modelgroupof.com/",
+          description:
+            "Multi‑sector holding company with finance and services operations.",
+        },
+        {
+          name: "CANADIN FINANCE",
+          website: "https://modelgroupof.com/",
+          description:
+            "Savings, deposits, and lending services with customer‑centric policies.",
+        },
+        {
+          name: "CASINO UK",
+          website: "https://modelgroupof.com/",
+          description:
+            "Curated gaming and entertainment experiences in the UK market.",
+        },
+        {
+          name: "CHASE FINANCE LLP",
+          website: "https://modelgroupof.com/",
+          description:
+            "Financial products spanning deposits, credit lines, and business support.",
+        },
+        {
+          name: "CITI FINANCE LIMITED",
+          website: "https://modelgroupof.com/",
+          description:
+            "Deposit programs with flexible terms and accessible lending facilities.",
+        },
+        {
+          name: "DUBAI BIG TIKAT",
+          website: "https://modelgroupof.com/",
+          description:
+            "Large‑format raffle events offering compliant prize draws and promotions.",
+        },
+        {
+          name: "DUTCH FINANCE",
+          website: "https://modelgroupof.com/",
+          description:
+            "Traditional and digital finance services with an emphasis on security and returns.",
+        },
+        {
+          name: "JP MORGAN FINANCE",
+          website: "https://modelgroupof.com/",
+          description:
+            "Comprehensive financial services for retail and corporate clients.",
+        },
+        {
+          name: "MGC BIG TIKAT",
+          website: "https://modelgroupof.com/",
+          description: "Prize draw and raffle experiences under the MGC brand.",
+        },
+        {
+          name: "MGC U WIN LOTTERY LIMITED",
+          website: "https://modelgroupof.com/",
+          description:
+            "Lottery and instant‑win experiences operated with a focus on fairness and compliance.",
+        },
+        {
+          name: "MODEL GROUP OF COMPANIES",
+          website: "https://modelgroupof.com/",
+          description:
+            "Global operations spanning exports, procurement, and strategic partnerships.",
+        },
+        {
+          name: "MODEL GROUP OF COMPANIES LIMITED",
+          website: "https://modelgroupof.com/",
+          description:
+            "International corporate group providing mobility, finance, and services.",
+        },
+        {
+          name: "MODEL GROUP U WIN LOTTERY LIMITED",
+          website: "https://modelgroupof.com/",
+          description:
+            "Lottery and sweepstake operations with responsible gaming practices.",
+        },
+        {
+          name: "OCBC FINANCE LTD",
+          website: "https://modelgroupof.com/",
+          description:
+            "Deposit and lending services with flexible tenure and competitive rates.",
+        },
+        {
+          name: "PAYPAL FINANCE LLP",
+          website: "https://modelgroupof.com/",
+          description:
+            "Digital‑first financial services, deposits, and payment solutions.",
+        },
+        {
+          name: "S L TOBACCO",
+          website: "https://modelgroupof.com/",
+          description:
+            "Tobacco products distribution and related trade services.",
+        },
+        {
+          name: "STANDARD CHARTERED FINANCE LLP",
+          website: "https://modelgroupof.com/",
+          description:
+            "Finance solutions including deposits and personal/business lending products.",
+        },
+        {
+          name: "STARLING FINANCE LLP",
+          website: "https://modelgroupof.com/",
+          description:
+            "Retail and SME finance offerings with modern, digital workflows.",
+        },
+        {
+          name: "STRIPE FINANCE LIMITED",
+          website: "https://modelgroupof.com/",
+          description:
+            "Technology‑driven finance services for individuals and merchants.",
+        },
+        {
+          name: "SWISS FINANCE LTD",
+          website: "https://modelgroupof.com/",
+          description:
+            "Private and retail finance services with a focus on stability and privacy.",
+        },
+        {
+          name: "UNICEF NGO LIMITED",
+          website: "https://modelgroupof.com/",
+          description:
+            "Non‑profit initiatives focused on children’s welfare, education, and health programs.",
+        },
+        {
+          name: "UNITED NATIONS NGO LTD",
+          website: "https://modelgroupof.com/",
+          description:
+            "International NGO programs covering development and humanitarian support.",
+        },
+        {
+          name: "WELLS FARGO FINANCE LIMITED",
+          website: "https://modelgroupof.com/",
+          description:
+            "Full‑suite finance services for consumers and enterprises.",
+        },
+        {
+          name: "WISEBANK & FINANCE LIMITED",
+          website: "https://modelgroupof.com/",
+          description:
+            "Banking and finance solutions with modern digital access and secure deposits.",
+        },
+        {
+          name: "WORLD VISION NGO LTD",
+          website: "https://modelgroupof.com/",
+          description:
+            "NGO initiatives delivering community development and disaster response programs.",
+        },
+      ];
       // List of companies to ensure are present
       const extraCompanies = [
         {
@@ -868,7 +868,7 @@ const Hero = () => {
       const matchesLoc = activeLocation === "All" || loc === activeLocation;
       const matchesQuery = query
         ? c.name.toLowerCase().includes(query.toLowerCase()) ||
-          c.description.toLowerCase().includes(query.toLowerCase())
+        c.description.toLowerCase().includes(query.toLowerCase())
         : true;
       return matchesType && matchesLoc && matchesQuery;
     });
@@ -1016,11 +1016,10 @@ const Hero = () => {
                   key={t}
                   type="button"
                   onClick={() => setActiveType(t)}
-                  className={`px-3 py-1.5 rounded-full text-sm border transition ${
-                    activeType === t
+                  className={`px-3 py-1.5 rounded-full text-sm border transition ${activeType === t
                       ? "bg-black text-white border-black"
                       : "bg-white text-gray-700 border-gray-200 hover:border-gray-300"
-                  }`}
+                    }`}
                   aria-pressed={activeType === t}
                 >
                   {t}

@@ -53,7 +53,7 @@ const Hero = () => {
               Model Group of Companies (Pvt) Ltd
               <br />
               G 213, Niwasipura, Kotugoda, Ja-Ela , Sri Lanka.
-              <br/>
+              <br />
               502, Negambo road, Dadugama, Ja-Ela , Sri Lanka.
             </InfoItem>
             <InfoItem icon={Clock} title="Office Hours">
@@ -182,11 +182,11 @@ const Hero = () => {
             Other ways to reach us:
           </span>
           <a href="tel:+94773619094" className="hover:underline">
-          +94 77 3 61 90 94
+            +94 77 3 61 90 94
           </a>
           <span>•</span>
           <a href="mailto:model@modelgroupof.com" className="hover:underline">
-          model@modelgroupof.com
+            model@modelgroupof.com
           </a>
           <span>•</span>
           <a

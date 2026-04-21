@@ -347,11 +347,10 @@ const Leaders = () => {
                 setDirection(idx > currentIndex ? 1 : -1);
                 setCurrentIndex(idx);
               }}
-              className={`h-2 rounded-full transition-all duration-500 ${
-                idx === currentIndex
+              className={`h-2 rounded-full transition-all duration-500 ${idx === currentIndex
                   ? "w-12 bg-linear-to-r from-sky-700 via-cyan-700 to-blue-600 shadow-lg"
                   : "w-2 bg-gray-300 hover:bg-gray-400"
-              }`}
+                }`}
               aria-label={`Go to slide ${idx + 1}`}
             />
           ))}

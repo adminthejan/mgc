@@ -534,11 +534,10 @@ const HeroOne = () => {
             key={i}
             onClick={() => goTo(i)}
             aria-label={`Go to slide ${i + 1}`}
-            className={`w-1 h-1 rounded-full transition-all ${
-              index === i
+            className={`w-1 h-1 rounded-full transition-all ${index === i
                 ? "bg-white scale-125"
                 : "bg-white/50 hover:bg-white/70"
-            }`}
+              }`}
             whileHover={{ scale: 1.2 }}
           />
         ))}

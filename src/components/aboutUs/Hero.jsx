@@ -40,7 +40,7 @@ const AboutUs = () => {
     { value: "10+", label: "Business Verticals", icon: Users },
   ];
 
-  const countries = ["Dubai","UK","Japan","Canada","Kenya","USA","Germany","Australia","Ireland","Spain","Finland","Brazil"];
+  const countries = ["Dubai", "UK", "Japan", "Canada", "Kenya", "USA", "Germany", "Australia", "Ireland", "Spain", "Finland", "Brazil"];
 
   return (
     <main className="min-h-screen text-gray-800 bg-gray-50">
