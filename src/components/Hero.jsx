@@ -70,13 +70,52 @@ import swiss from "../assets/carousel/swiss.jpg";
 import casino2 from "../assets/carousel/casino2.jpg";
 import casino3 from "../assets/carousel/casino3.jpg";
 
+import image1 from "../assets/cards/01.jpg";
+import image2 from "../assets/cards/02.jpg";
+import image3 from "../assets/cards/03.jpg";
+import image4 from "../assets/cards/04.jpg";
+import image5 from "../assets/cards/05.jpg";
+import image6 from "../assets/cards/06.jpg";
+import image7 from "../assets/cards/07.jpg";
+import image8 from "../assets/cards/08.jpg";
+import image9 from "../assets/cards/09.jpg";
+import image10 from "../assets/cards/10.jpg";
+import image11 from "../assets/cards/11.jpg";
+import image12 from "../assets/cards/12.jpg";
+import image13 from "../assets/cards/13.jpg";
+import image14 from "../assets/cards/14.jpg";
+import image15 from "../assets/cards/15.jpg";
+import image16 from "../assets/cards/16.jpg";
+import image17 from "../assets/cards/17.jpg";
+import image18 from "../assets/cards/18.jpg";
+import image19 from "../assets/cards/19.jpg";
+import image20 from "../assets/cards/20.jpg";
+import image21 from "../assets/cards/21.jpg";
+import image22 from "../assets/cards/22.jpg";
+import image23 from "../assets/cards/23.jpg";
+import image24 from "../assets/cards/24.jpg";
+import image25 from "../assets/cards/25.jpg";
+import image26 from "../assets/cards/26.jpg";
+import image27 from "../assets/cards/27.jpg";
+import image28 from "../assets/cards/28.jpg";
+import image29 from "../assets/cards/29.jpg";
+import image30 from "../assets/cards/30.jpg";
+import image31 from "../assets/cards/31.jpg";
+import image32 from "../assets/cards/32.jpg";
+import image33 from "../assets/cards/33.jpg";
+import image34 from "../assets/cards/34.jpg";
+
+
+
+
+
 
 const slides = [
   {
     title: "BARCLAYS FINANCE LIMITED",
     description:
       "A leading global finance and investment company specializing in personal loans, corporate banking, and asset management.",
-    image: bank,
+    image: image2,
     alt: "BARCLAYS FINANCE LIMITED",
     link: "https://modelgroupof.com/",
   },
@@ -84,7 +123,7 @@ const slides = [
     title: "USA FINANCE LLP",
     description:
       "A reputable American financial services firm providing investment solutions, wealth management, and lending services to individuals and businesses.",
-    image: bank2,
+    image: image3,
     alt: "USA FINANCE LLP",
     link: "https://modelgroupof.com/",
   },
@@ -100,7 +139,7 @@ const slides = [
     title: "MODEL GROUP FINANCE LIMITED",
     description:
       "A diversified financial institution delivering tailored banking, investment, and insurance products to a global clientele.",
-    image: bank4,
+    image: image4,
     alt: "MODEL GROUP FINANCE LIMITED",
     link: "https://modelgroupof.com/",
   },
@@ -124,7 +163,7 @@ const slides = [
     title: "MODEL GROUP OF COMPANIES LTD",
     description:
       "A multinational conglomerate with interests in finance, real estate, energy, and technology sectors.",
-    image: bank5,
+    image: image5,
     alt: "MODEL GROUP OF COMPANIES LTD",
     link: "https://modelgroupof.com/",
   },
@@ -140,7 +179,7 @@ const slides = [
     title: "BARCLAYS GROUP OF COMPANIES LTD",
     description:
       "A diversified group offering banking, insurance, and investment solutions with a global reach.",
-    image: bank6,
+    image: image6,
     alt: "BARCLAYS GROUP OF COMPANIES LTD",
     link: "https://modelgroupof.com/",
   },
@@ -148,7 +187,7 @@ const slides = [
     title: "CANADIN FINANCE",
     description:
       "A Canadian-based financial services provider known for innovative banking, credit, and mortgage solutions.",
-    image: bank7,
+    image: image7,
     alt: "CANADIN FINANCE",
     link: "https://modelgroupof.com/",
   },
@@ -164,7 +203,7 @@ const slides = [
     title: "CHASE FINANCE LLP",
     description:
       "A trusted financial partner offering a wide range of banking, lending, and investment services for individuals and enterprises.",
-    image: bank8,
+    image: image8,
     alt: "CHASE FINANCE LLP",
     link: "https://modelgroupof.com/",
   },
@@ -172,7 +211,7 @@ const slides = [
     title: "CITI FINANCE LIMITED",
     description:
       "A global financial powerhouse delivering commercial banking, consumer finance, and capital market solutions.",
-    image: bank9,
+    image: image10,
     alt: "CITI FINANCE LIMITED",
     link: "https://modelgroupof.com/",
   },
@@ -188,7 +227,7 @@ const slides = [
     title: "DUTCH FINANCE",
     description:
       "A Netherlands-based finance company known for transparent banking, investment, and international remittance services.",
-    image: bank21,
+    image: image11,
     alt: "DUTCH FINANCE",
     link: "https://modelgroupof.com/",
   },
@@ -196,7 +235,7 @@ const slides = [
     title: "JP MORGAN FINANCE",
     description:
       "A world-renowned provider of investment banking, asset management, and financial advisory services.",
-    image: jp,
+    image: image33,
     alt: "JP MORGAN FINANCE",
     link: "https://modelgroupof.com/",
   },
@@ -220,7 +259,7 @@ const slides = [
     title: "MODEL GROUP OF COMPANIES",
     description:
       "An international business group with interests spanning finance, manufacturing, real estate, and technology.",
-    image: bank11,
+    image: image12,
     alt: "MODEL GROUP OF COMPANIES",
     link: "https://modelgroupof.com/",
   },
@@ -228,7 +267,7 @@ const slides = [
     title: "MODEL GROUP OF COMPANIES LIMITED",
     description:
       "A global holding company managing investments and operations across multiple industries and regions.",
-    image: bank12,
+    image: image13,
     alt: "MODEL GROUP OF COMPANIES LIMITED",
     link: "https://modelgroupof.com/",
   },
@@ -244,7 +283,7 @@ const slides = [
     title: "OCBC FINANCE LTD",
     description:
       "A well-established financial institution providing comprehensive banking, wealth management, and investment services.",
-    image: bank13,
+    image: image14,
     alt: "OCBC FINANCE LTD",
     link: "https://modelgroupof.com/",
   },
@@ -252,7 +291,7 @@ const slides = [
     title: "PAYPAL FINANCE LLP",
     description:
       "A global digital payments leader enabling secure, fast, and convenient financial transactions for businesses and consumers.",
-    image: bank14,
+    image: image9,
     alt: "PAYPAL FINANCE LLP",
     link: "https://modelgroupof.com/",
   },
@@ -268,7 +307,7 @@ const slides = [
     title: "STANDARD CHARTERED FINANCE LLP",
     description:
       "An international bank offering personal, commercial, and investment banking services across emerging markets.",
-    image: bank15,
+    image: image15,
     alt: "STANDARD CHARTERED FINANCE LLP",
     link: "https://modelgroupof.com/",
   },
@@ -276,7 +315,7 @@ const slides = [
     title: "STARLING FINANCE LLP",
     description:
       "A digital-first bank providing innovative mobile banking, payment, and lending solutions for modern consumers.",
-    image: bank16,
+    image: image16,
     alt: "STARLING FINANCE LLP",
     link: "https://modelgroupof.com/",
   },
@@ -284,7 +323,7 @@ const slides = [
     title: "STRIPE FINANCE LIMITED",
     description:
       "A technology-driven finance company delivering seamless payment processing and financial infrastructure for businesses.",
-    image: stripe,
+    image: image34,
     alt: "STRIPE FINANCE LIMITED",
     link: "https://modelgroupof.com/",
   },
@@ -292,7 +331,7 @@ const slides = [
     title: "SWISS FINANCE LTD",
     description:
       "A Swiss-based financial institution renowned for private banking, wealth management, and investment advisory services.",
-    image: swiss,
+    image: image17,
     alt: "SWISS FINANCE LTD",
     link: "https://modelgroupof.com/",
   },
@@ -316,7 +355,7 @@ const slides = [
     title: "WELLS FARGO FINANCE LIMITED",
     description:
       "A leading provider of banking, mortgage, and financial services with a strong presence across international markets.",
-    image: bank17,
+    image: image18,
     alt: "WELLS FARGO FINANCE LIMITED",
     link: "https://modelgroupof.com/",
   },
@@ -324,7 +363,7 @@ const slides = [
     title: "WISEBANK & FINANCE LIMITED",
     description:
       "A modern financial institution offering smart banking, digital wallets, and innovative lending products.",
-    image: bank20,
+    image: image19,
     alt: "WISEBANK & FINANCE LIMITED",
     link: "https://modelgroupof.com/",
   },
@@ -340,7 +379,7 @@ const slides = [
     title: "BANK USA",
     description:
       "A U.S.-based commercial bank providing retail, corporate, and international banking solutions.",
-    image: bank22,
+    image: image1,
     alt: "BANK USA",
     link: "https://modelgroupof.com/",
   },
@@ -348,7 +387,7 @@ const slides = [
     title: "WISE BANK UK",
     description:
       "A UK-headquartered digital-first bank offering cross-border payments, remittances, and smart finance products.",
-    image: bank23,
+    image: image20,
     alt: "WISE BANK UK",
     link: "https://modelgroupof.com/",
   },
@@ -372,7 +411,7 @@ const slides = [
     title: "MODEL GROUP FINANCE UK , USA",
     description:
       "Regional finance operations serving UK and U.S. clients with lending, treasury, and investment products.",
-    image: bank24,
+    image: image21,
     alt: "MODEL GROUP FINANCE UK , USA",
     link: "https://modelgroupof.com/",
   },
@@ -380,7 +419,7 @@ const slides = [
     title: "MODEL GROUP INTERNATIONAL (PVT) LTD , SRI LANKA",
     description:
       "Sri Lankan private limited entity managing Model Group’s South Asian investments and project portfolios.",
-    image: bank31,
+    image: image22,
     alt: "MODEL GROUP INTERNATIONAL (PVT) LTD , SRI LANKA",
     link: "https://modelgroupof.com/",
   },
@@ -388,7 +427,7 @@ const slides = [
     title: "MODEL GROUP OF COMPANIES LLC, USA",
     description:
       "U.S.-registered holding for the Model Group overseeing finance, real estate, and trading ventures.",
-    image: bank25,
+    image: image23,
     alt: "MODEL GROUP OF COMPANIES LLC, USA",
     link: "https://modelgroupof.com/",
   },
@@ -396,7 +435,7 @@ const slides = [
     title: "MODEL GROUP OF COMPANIES LLC, CANADA",
     description:
       "Canadian subsidiary coordinating North American operations, compliance, and financial services.",
-    image: bank26,
+    image: image24,
     alt: "MODEL GROUP OF COMPANIES LLC, CANADA",
     link: "https://modelgroupof.com/",
   },
@@ -404,7 +443,7 @@ const slides = [
     title: "MODEL GROUP OF COMPANIES LTD , UK",
     description:
       "UK-registered limited company facilitating European investments, banking, and technology projects.",
-    image: bank27,
+    image: image25,
     alt: "MODEL GROUP OF COMPANIES LTD , UK",
     link: "https://modelgroupof.com/",
   },
@@ -420,7 +459,7 @@ const slides = [
     title: "MODEL GROUP COMPANIES LLC,GERMANY",
     description:
       "German-registered entity overseeing EU-focused finance, logistics, and industrial partnerships.",
-    image: bank29,
+    image: image26,
     alt: "MODEL GROUP COMPANIES LLC,GERMANY",
     link: "https://modelgroupof.com/",
   },
@@ -428,7 +467,7 @@ const slides = [
     title: "MODEL GROUP COMPANIES PVT,AUSTRALIA",
     description:
       "Australian private company handling regional investment, property, and trade operations.",
-    image: bank30,
+    image: image27,
     alt: "MODEL GROUP COMPANIES PVT,AUSTRALIA",
     link: "https://modelgroupof.com/",
   },
@@ -436,7 +475,7 @@ const slides = [
     title: "MODEL GROUP COMPANIES LLC, FINLAND",
     description:
       "Nordic branch focused on sustainable finance, green energy projects, and tech-sector collaborations.",
-    image: bank28,
+    image: image28,
     alt: "MODEL GROUP COMPANIES LLC, FINLAND",
     link: "https://modelgroupof.com/",
   },
@@ -444,7 +483,7 @@ const slides = [
     title: "MODEL GROUP COMPANIES LLC,SPAIN",
     description:
       "Spanish subsidiary supporting EU and Mediterranean business development and hospitality ventures.",
-    image: bank32,
+    image: image29,
     alt: "MODEL GROUP COMPANIES LLC,SPAIN",
     link: "https://modelgroupof.com/",
   },
@@ -452,7 +491,7 @@ const slides = [
     title: "MODEL GROUP COMPANIES LLC,MIDDLE EAST",
     description:
       "Regional coordination office for Middle East investments, infrastructure, and public-private partnerships.",
-    image: bank33,
+    image: image30,
     alt: "MODEL GROUP COMPANIES LLC,MIDDLE EAST",
     link: "https://modelgroupof.com/",
   },
@@ -460,7 +499,7 @@ const slides = [
     title: "MODEL GROUP COMPANIES LTD,KENYA",
     description:
       "East African subsidiary driving finance, agriculture, and community development projects in Kenya.",
-    image: bank34,
+    image: image31,
     alt: "MODEL GROUP COMPANIES LTD,KENYA",
     link: "https://modelgroupof.com/",
   },
@@ -468,7 +507,7 @@ const slides = [
     title: "MODEL GROUP KOKSAI,JAPAN",
     description:
       "Japan-based international business arm (KOKSAI) enabling trade, technology exchange, and financial services.",
-    image: bank35,
+    image: image32,
     alt: "MODEL GROUP KOKSAI,JAPAN",
     link: "https://modelgroupof.com/",
   },
