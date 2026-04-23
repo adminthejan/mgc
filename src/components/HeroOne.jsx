@@ -55,12 +55,98 @@ import lottery6 from "../assets/carousel/lottery6.jpg";
 import tobacco from "../assets/carousel/tobacco.jpg";
 import ngo2 from "../assets/carousel/ngo2.jpg";
 import ngo3 from "../assets/carousel/ngo3.jpg";
+import kids from "../assets/carousel/kids.jpg";
+import ngo4 from "../assets/carousel/ngo4.jpg";
 import unicef from "../assets/carousel/unicef.jpg";
 import jp from "../assets/carousel/jp.jpg";
 
 import stripe from "../assets/carousel/stripe.jpg";
 import swiss from "../assets/carousel/swiss.jpg";
 import casino2 from "../assets/carousel/casino2.jpg";
+import casino3 from "../assets/carousel/casino3.jpg";
+
+import image1 from "../assets/cards/01.jpg";
+import image2 from "../assets/cards/02.jpg";
+import image5 from "../assets/cards/05.jpg";
+import image6 from "../assets/cards/06.jpg";
+import image7 from "../assets/cards/07.jpg";
+import image8 from "../assets/cards/08.jpg";
+import image9 from "../assets/cards/09.jpg";
+import image10 from "../assets/cards/10.jpg";
+import image11 from "../assets/cards/11.jpg";
+import image12 from "../assets/cards/12.jpg";
+import image13 from "../assets/cards/13.jpg";
+import image14 from "../assets/cards/14.jpg";
+import image19 from "../assets/cards/19.jpg";
+import image20 from "../assets/cards/20.jpg";
+import image22 from "../assets/cards/22.jpg";
+import image23 from "../assets/cards/23.jpg";
+import image24 from "../assets/cards/24.jpg";
+import image25 from "../assets/cards/25.jpg";
+import image27 from "../assets/cards/27.jpg";
+import image35 from "../assets/cards/35.jpg";
+import image36 from "../assets/cards/36.jpg";
+import image37 from "../assets/cards/37.jpg";
+import image38 from "../assets/cards/38.jpg";
+import image39 from "../assets/cards/39.jpg";
+import image40 from "../assets/cards/40.jpg";
+import image41 from "../assets/cards/41.jpg";
+import image42 from "../assets/cards/42.jpg";
+import image43 from "../assets/cards/43.jpg";
+import image44 from "../assets/cards/44.jpg";
+import image45 from "../assets/cards/45.jpg";
+
+const headerSlideImageMap = {
+  "BARCLAYS FINANCE LIMITED": image2,
+  "USA FINANCE LLP": image41,
+  "MGC CASINO LIMITED": casino,
+  "MODEL GROUP FINANCE LIMITED": image35,
+  "MG GROUP NGO": ngo2,
+  "MODEL GROUP OF COMPANIES LTD": image5,
+  "ABU DHABI BIG TIKAT": lottery6,
+  "BARCLAYS GROUP OF COMPANIES LTD": image6,
+  "CANADIN FINANCE": image7,
+  "CASINO UK": casino2,
+  "CHASE FINANCE LLP": image8,
+  "CITI FINANCE LIMITED": image10,
+  "DUBAI BIG TIKAT": lottery3,
+  "DUTCH FINANCE": image11,
+  "JP MORGAN FINANCE": image36,
+  "MGC BIG TIKAT": lottery2,
+  "MGC U WIN LOTTERY LIMITED": lottery,
+  "MODEL GROUP OF COMPANIES": image12,
+  "MODEL GROUP OF COMPANIES LIMITED": image13,
+  "MODEL GROUP U WIN LOTTERY LIMITED": lottery5,
+  "OCBC FINANCE LTD": image14,
+  "PAYPAL FINANCE LLP": image9,
+  "S L TOBACCO": tobacco,
+  "STANDARD CHARTERED FINANCE LLP": image38,
+  "STARLING FINANCE LLP": image38,
+  "STRIPE FINANCE LIMITED": image39,
+  "SWISS FINANCE LTD": image40,
+  "UNICEF NGO LIMITED": image45,
+  "UNITED NATIONS NGO LTD": kids,
+  "WELLS FARGO FINANCE LIMITED": image41,
+  "WISEBANK & FINANCE LIMITED": image19,
+  "WORLD VISION NGO LTD": ngo3,
+  "BANK USA": image1,
+  "WISE BANK UK": image20,
+  "MGC CASINO USA": casino3,
+  "MG GROUP NGO UK , USA": ngo4,
+  "MODEL GROUP FINANCE UK , USA": image37,
+  "MODEL GROUP INTERNATIONAL (PVT) LTD , SRI LANKA": image22,
+  "MODEL GROUP OF COMPANIES LLC, USA": image23,
+  "MODEL GROUP OF COMPANIES LLC, CANADA": image24,
+  "MODEL GROUP OF COMPANIES LTD , UK": image25,
+  "MODEL USED AUTOMOBILE TRADING FOR EXPORT L.L.C , DUBAI": vehicle,
+  "MODEL GROUP COMPANIES LLC,GERMANY": image42,
+  "MODEL GROUP COMPANIES PVT,AUSTRALIA": image27,
+  "MODEL GROUP COMPANIES LLC, FINLAND": image41,
+  "MODEL GROUP COMPANIES LLC,SPAIN": image42,
+  "MODEL GROUP COMPANIES LLC,MIDDLE EAST": image40,
+  "MODEL GROUP COMPANIES LTD,KENYA": image43,
+  "MODEL GROUP KOKSAI,JAPAN": image44,
+};
 
 const slides = [
   {
@@ -455,7 +541,10 @@ const slides = [
     alt: "MODEL GROUP KOKSAI,JAPAN",
     link: "https://modelgroupof.com/",
   },
-];
+].map((slide) => ({
+  ...slide,
+  image: headerSlideImageMap[slide.title] || slide.image,
+}));
 
 const AUTO_INTERVAL_MS = 2800; // auto move every 2.8s (faster progress bar and slide advance)
 
@@ -535,8 +624,8 @@ const HeroOne = () => {
             onClick={() => goTo(i)}
             aria-label={`Go to slide ${i + 1}`}
             className={`w-1 h-1 rounded-full transition-all ${index === i
-                ? "bg-white scale-125"
-                : "bg-white/50 hover:bg-white/70"
+              ? "bg-white scale-125"
+              : "bg-white/50 hover:bg-white/70"
               }`}
             whileHover={{ scale: 1.2 }}
           />

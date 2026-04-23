@@ -104,6 +104,17 @@ import image31 from "../assets/cards/31.jpg";
 import image32 from "../assets/cards/32.jpg";
 import image33 from "../assets/cards/33.jpg";
 import image34 from "../assets/cards/34.jpg";
+import image35 from "../assets/cards/35.jpg";
+import image36 from "../assets/cards/36.jpg";
+import image37 from "../assets/cards/37.jpg";
+import image38 from "../assets/cards/38.jpg";
+import image39 from "../assets/cards/39.jpg";
+import image40 from "../assets/cards/40.jpg";
+import image41 from "../assets/cards/41.jpg";
+import image42 from "../assets/cards/42.jpg";
+import image43 from "../assets/cards/43.jpg";
+import image44 from "../assets/cards/44.jpg";
+import image45 from "../assets/cards/45.jpg";
 
 
 
@@ -123,7 +134,7 @@ const slides = [
     title: "USA FINANCE LLP",
     description:
       "A reputable American financial services firm providing investment solutions, wealth management, and lending services to individuals and businesses.",
-    image: image3,
+    image: image41,
     alt: "USA FINANCE LLP",
     link: "https://modelgroupof.com/",
   },
@@ -139,7 +150,7 @@ const slides = [
     title: "MODEL GROUP FINANCE LIMITED",
     description:
       "A diversified financial institution delivering tailored banking, investment, and insurance products to a global clientele.",
-    image: image4,
+    image: image35,
     alt: "MODEL GROUP FINANCE LIMITED",
     link: "https://modelgroupof.com/",
   },
@@ -235,7 +246,7 @@ const slides = [
     title: "JP MORGAN FINANCE",
     description:
       "A world-renowned provider of investment banking, asset management, and financial advisory services.",
-    image: image33,
+    image: image36,
     alt: "JP MORGAN FINANCE",
     link: "https://modelgroupof.com/",
   },
@@ -307,7 +318,7 @@ const slides = [
     title: "STANDARD CHARTERED FINANCE LLP",
     description:
       "An international bank offering personal, commercial, and investment banking services across emerging markets.",
-    image: image15,
+    image: image38,
     alt: "STANDARD CHARTERED FINANCE LLP",
     link: "https://modelgroupof.com/",
   },
@@ -315,7 +326,7 @@ const slides = [
     title: "STARLING FINANCE LLP",
     description:
       "A digital-first bank providing innovative mobile banking, payment, and lending solutions for modern consumers.",
-    image: image16,
+    image: image38,
     alt: "STARLING FINANCE LLP",
     link: "https://modelgroupof.com/",
   },
@@ -323,7 +334,7 @@ const slides = [
     title: "STRIPE FINANCE LIMITED",
     description:
       "A technology-driven finance company delivering seamless payment processing and financial infrastructure for businesses.",
-    image: image34,
+    image: image39,
     alt: "STRIPE FINANCE LIMITED",
     link: "https://modelgroupof.com/",
   },
@@ -331,7 +342,7 @@ const slides = [
     title: "SWISS FINANCE LTD",
     description:
       "A Swiss-based financial institution renowned for private banking, wealth management, and investment advisory services.",
-    image: image17,
+    image: image40,
     alt: "SWISS FINANCE LTD",
     link: "https://modelgroupof.com/",
   },
@@ -339,7 +350,7 @@ const slides = [
     title: "UNICEF NGO LIMITED",
     description:
       "A humanitarian organization focused on improving the lives of children and families through education, health, and emergency relief.",
-    image: unicef,
+    image: image45,
     alt: "UNICEF NGO LIMITED",
     link: "https://modelgroupof.com/",
   },
@@ -355,7 +366,7 @@ const slides = [
     title: "WELLS FARGO FINANCE LIMITED",
     description:
       "A leading provider of banking, mortgage, and financial services with a strong presence across international markets.",
-    image: image18,
+    image: image41,
     alt: "WELLS FARGO FINANCE LIMITED",
     link: "https://modelgroupof.com/",
   },
@@ -411,7 +422,7 @@ const slides = [
     title: "MODEL GROUP FINANCE UK , USA",
     description:
       "Regional finance operations serving UK and U.S. clients with lending, treasury, and investment products.",
-    image: image21,
+    image: image37,
     alt: "MODEL GROUP FINANCE UK , USA",
     link: "https://modelgroupof.com/",
   },
@@ -459,7 +470,7 @@ const slides = [
     title: "MODEL GROUP COMPANIES LLC,GERMANY",
     description:
       "German-registered entity overseeing EU-focused finance, logistics, and industrial partnerships.",
-    image: image26,
+    image: image42,
     alt: "MODEL GROUP COMPANIES LLC,GERMANY",
     link: "https://modelgroupof.com/",
   },
@@ -475,7 +486,7 @@ const slides = [
     title: "MODEL GROUP COMPANIES LLC, FINLAND",
     description:
       "Nordic branch focused on sustainable finance, green energy projects, and tech-sector collaborations.",
-    image: image28,
+    image: image41,
     alt: "MODEL GROUP COMPANIES LLC, FINLAND",
     link: "https://modelgroupof.com/",
   },
@@ -483,7 +494,7 @@ const slides = [
     title: "MODEL GROUP COMPANIES LLC,SPAIN",
     description:
       "Spanish subsidiary supporting EU and Mediterranean business development and hospitality ventures.",
-    image: image29,
+    image: image42,
     alt: "MODEL GROUP COMPANIES LLC,SPAIN",
     link: "https://modelgroupof.com/",
   },
@@ -491,7 +502,7 @@ const slides = [
     title: "MODEL GROUP COMPANIES LLC,MIDDLE EAST",
     description:
       "Regional coordination office for Middle East investments, infrastructure, and public-private partnerships.",
-    image: image30,
+    image: image40,
     alt: "MODEL GROUP COMPANIES LLC,MIDDLE EAST",
     link: "https://modelgroupof.com/",
   },
@@ -499,7 +510,7 @@ const slides = [
     title: "MODEL GROUP COMPANIES LTD,KENYA",
     description:
       "East African subsidiary driving finance, agriculture, and community development projects in Kenya.",
-    image: image31,
+    image: image43,
     alt: "MODEL GROUP COMPANIES LTD,KENYA",
     link: "https://modelgroupof.com/",
   },
@@ -507,7 +518,7 @@ const slides = [
     title: "MODEL GROUP KOKSAI,JAPAN",
     description:
       "Japan-based international business arm (KOKSAI) enabling trade, technology exchange, and financial services.",
-    image: image32,
+    image: image44,
     alt: "MODEL GROUP KOKSAI,JAPAN",
     link: "https://modelgroupof.com/",
   },
