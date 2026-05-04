@@ -3,14 +3,16 @@ Image Optimization Script
 =========================
 Converts .png, .jpg, and .jpeg images to .webp format using Pillow.
 Preserves the original directory structure in the output folder.
+Optionally resizes images that exceed a maximum dimension.
 
 Usage:
-    python optimize_images.py [--source SRC_DIR] [--output OUT_DIR] [--quality Q]
+    python optimize_images.py [--source SRC_DIR] [--output OUT_DIR] [--quality Q] [--max-size PX]
 
 Defaults:
-    --source  src/assets
-    --output  src/assets_optimized
-    --quality 80
+    --source   src/assets
+    --output   src/assets_optimized
+    --quality  60
+    --max-size 1920
 """
 
 import argparse
@@ -24,9 +26,16 @@ from PIL import Image
 SUPPORTED_EXTENSIONS = {".png", ".jpg", ".jpeg"}
 
 
-def optimize_image(src_path: Path, dest_path: Path, quality: int) -> dict:
+def optimize_image(src_path: Path, dest_path: Path, quality: int, max_size: int = 0) -> dict:
     """
-    Open an image, convert it to WebP, and save it to dest_path.
+    Open an image, optionally resize it, convert it to WebP, and save.
+
+    Args:
+        src_path:  Path to the source image.
+        dest_path: Path where the .webp file will be written.
+        quality:   WebP quality (1-100).
+        max_size:  If > 0, the longest edge is capped to this many pixels
+                   (aspect ratio is preserved).
 
     Returns a dict with source size, destination size, and savings info.
     Raises on any Pillow or I/O error.
@@ -42,8 +51,14 @@ def optimize_image(src_path: Path, dest_path: Path, quality: int) -> dict:
         else:
             img = img.convert("RGB")
 
+        # Resize if the image exceeds the max dimension
+        if max_size > 0:
+            w, h = img.size
+            if w > max_size or h > max_size:
+                img.thumbnail((max_size, max_size), Image.LANCZOS)
+
         dest_path.parent.mkdir(parents=True, exist_ok=True)
-        img.save(dest_path, format="WEBP", quality=quality)
+        img.save(dest_path, format="WEBP", quality=quality, method=6)
 
     dest_size = dest_path.stat().st_size
     saved = src_size - dest_size
@@ -85,14 +100,21 @@ def main() -> None:
     parser.add_argument(
         "--quality",
         type=int,
-        default=80,
-        help="WebP quality setting, 1-100 (default: 80)",
+        default=60,
+        help="WebP quality setting, 1-100 (default: 60)",
+    )
+    parser.add_argument(
+        "--max-size",
+        type=int,
+        default=1920,
+        help="Max width/height in pixels; larger images are downscaled (default: 1920, 0 = no resize)",
     )
     args = parser.parse_args()
 
     source_dir = Path(args.source).resolve()
     output_dir = Path(args.output).resolve()
     quality = args.quality
+    max_size = args.max_size
 
     # ── Validation ──────────────────────────────────────────────────────
     if not source_dir.is_dir():
@@ -117,6 +139,7 @@ def main() -> None:
     print(f"Source      : {source_dir}")
     print(f"Output      : {output_dir}")
     print(f"Quality     : {quality}")
+    print(f"Max size    : {max_size if max_size > 0 else 'no resize'}")
     print(f"Images found: {len(images)}")
     print("-" * 70)
 
@@ -132,7 +155,7 @@ def main() -> None:
         dest_path = output_dir / relative.with_suffix(".webp")
 
         try:
-            result = optimize_image(img_path, dest_path, quality)
+            result = optimize_image(img_path, dest_path, quality, max_size)
             total_src += result["src_size"]
             total_dest += result["dest_size"]
             success_count += 1
