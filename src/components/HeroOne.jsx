@@ -566,7 +566,7 @@ const HeroOne = () => {
 
   return (
     <section
-      className="relative w-full h-screen overflow-hidden"
+      className="relative w-full h-[75vh] overflow-hidden"
       aria-roledescription="carousel"
       aria-label="Company highlights carousel"
     >
