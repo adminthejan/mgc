@@ -1124,8 +1124,8 @@ const Hero = () => {
                   type="button"
                   onClick={() => setActiveType(t)}
                   className={`px-3 py-1.5 rounded-full text-sm border transition ${activeType === t
-                      ? "bg-black text-white border-black"
-                      : "bg-white text-gray-700 border-gray-200 hover:border-gray-300"
+                    ? "bg-black text-white border-black"
+                    : "bg-white text-gray-700 border-gray-200 hover:border-gray-300"
                     }`}
                   aria-pressed={activeType === t}
                 >
