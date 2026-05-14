@@ -116,6 +116,57 @@ import image43 from "../assets/cards/43.jpg";
 import image44 from "../assets/cards/44.jpg";
 import image45 from "../assets/cards/45.jpg";
 
+const COMPANY_URLS = {
+  "BARCLAYS FINANCE LIMITED": "https://barclaysfinance.co",
+  "USA FINANCE LLP": "https://usafinancellp.com",
+  "MGC CASINO LIMITED": "https://mgccasino.com",
+  "MODEL GROUP FINANCE LIMITED": "https://modelgroupfinance.com",
+  "MGC GROUP NGO": "https://mgcgroupngo.com",
+  "MG GROUP NGO": "https://mggroupngo.com",
+  "MODEL GROUP OF COMPANIES LTD": "https://modelgroupof.com",
+  "ABU DHABI BIG TIKAT": "https://abudhabibigticket.co",
+  "BARCLAYS GROUP OF COMPANIES LTD": "https://barclaysgroup.co.uk",
+  "CASINO UK": "https://casinovin.co",
+  "CHASE FINANCE LLP": "https://chasefinance.co",
+  "CITI FINANCE LIMITED": "https://citifinance.co",
+  "DUBAI BIG TIKAT": "https://dubaibigticket.co",
+  "DUTCH FINANCE": "https://dutchfinance.co",
+  "JP MORGAN FINANCE": "https://jpmorganfinance.co",
+  "MGC BIG TIKAT": "https://bigticket.live",
+  "MGC U WIN LOTTERY LIMITED": "https://lotterywin.win",
+  "MODEL GROUP OF COMPANIES": "https://modelgroupof.com",
+  "MODEL GROUP OF COMPANIES LIMITED": "https://modelgroupof.com",
+  "MODEL GROUP U WIN LOTTERY LIMITED": "https://lotterywin.website",
+  "OCBC FINANCE LTD": "https://singaporefinance.co",
+  "PAYPAL FINANCE LLP": "https://paypalfinance.co",
+  "S L TOBACCO": "https://sltobacco.com",
+  "STANDARD CHARTERED FINANCE LLP": "https://standardcharteredfinance.co",
+  "STARLING FINANCE LLP": "https://starlingfinance.co",
+  "STRIPE FINANCE LIMITED": "https://stripefinance.co",
+  "SWISS FINANCE LTD": "https://swissfinanceltd.com",
+  "UNICEF NGO LIMITED": "https://unicefs.com",
+  "UNITED NATIONS NGO LTD": "https://unitednationss.com",
+  "WELLS FARGO FINANCE LIMITED": "https://wellsfargofinance.co",
+  "WORLD VISION NGO LTD": "https://worldvisionuk.co",
+  "MGC CASINO USA": "https://mgccasino.com",
+  "MG GROUP NGO UK , USA": "https://mggroupngo.com",
+  "MODEL GROUP FINANCE UK , USA": "https://modelgroupfinance.com",
+  "MODEL GROUP INTERNATIONAL (PVT) LTD , SRI LANKA": "https://modelgroupinternational.com",
+  "MODEL GROUP OF COMPANIES LLC, USA": "https://modelgroupof.com",
+  "MODEL GROUP OF COMPANIES LLC, CANADA": "https://modelgroupof.com",
+  "MODEL GROUP OF COMPANIES LTD , UK": "https://modelgroupof.com",
+  "MODEL USED AUTOMOBILE TRADING FOR EXPORT L.L.C , DUBAI": "https://onlinecarauction.co",
+  "MODEL GROUP COMPANIES LLC,GERMANY": "https://modelgroupof.com",
+  "MODEL GROUP COMPANIES PVT,AUSTRALIA": "https://modelgroupof.com",
+  "MODEL GROUP COMPANIES LLC, FINLAND": "https://modelgroupof.com",
+  "MODEL GROUP COMPANIES LLC,SPAIN": "https://modelgroupof.com",
+  "MODEL GROUP COMPANIES LLC,MIDDLE EAST": "https://modelgroupof.com",
+  "MODEL GROUP COMPANIES LTD,KENYA": "https://modelgroupof.com",
+  "MODEL GROUP KOKSAI,JAPAN": "https://modelgroupinternational.com",
+};
+
+const getCompanyUrl = (name) => COMPANY_URLS[name] || "https://modelgroupof.com/";
+
 
 
 
@@ -522,7 +573,10 @@ const slides = [
     alt: "MODEL GROUP KOKSAI,JAPAN",
     link: "https://modelgroupof.com/",
   },
-];
+].map((slide) => ({
+  ...slide,
+  link: getCompanyUrl(slide.title),
+}));
 
 const imageMap = slides.reduce((acc, slide) => {
   acc[slide.title] = slide.image;
@@ -841,7 +895,10 @@ const Hero = () => {
       const presentNames = new Set(base.map(c => c.name));
       // Only add those not present
       const missing = extraCompanies.filter(c => !presentNames.has(c.name));
-      return [...base, ...missing];
+      return [...base, ...missing].map((company) => ({
+        ...company,
+        website: getCompanyUrl(company.name),
+      }));
     },
     []
   );
